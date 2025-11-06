@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start" />
+
+    <!-- Trạng thái mở rộng (khi chưa cuộn) -->
+    <ConstraintSet android:id="@+id/start">
+        <!-- Avatar -->
+        <Constraint
+            android:id="@id/avatar_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:translationY="-50dp"
+            app:layout_anchor="@id/cover_image"
+            app:layout_anchorGravity="bottom|center_horizontal">
+            <CustomAttribute
+                app:attributeName="alpha"
+                app:customFloatValue="1.0" />
+        </Constraint>
+        <!-- Tên -->
+        <Constraint
+            android:id="@id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar">
+            <CustomAttribute
+                app:attributeName="alpha"
+                app:customFloatValue="1.0" />
+        </Constraint>
+    </ConstraintSet>
+
+    <!-- Trạng thái thu gọn (khi cuộn lên hết) -->
+    <ConstraintSet android:id="@id/end">
+        <!-- Avatar -->
+        <Constraint
+            android:id="@id/avatar_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:translationY="-80dp" 
+            app:layout_anchor="@id/cover_image"
+            app:layout_anchorGravity="bottom|center_horizontal">
+            <CustomAttribute
+                app:attributeName="alpha"
+                app:customFloatValue="0.0" />
+        </Constraint>
+        <!-- Tên -->
+        <Constraint
+            android:id="@id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar">
+            <CustomAttribute
+                app:attributeName="alpha"
+                app:customFloatValue="0.0" />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

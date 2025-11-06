@@ -1,0 +1,9 @@
+<resources>
+    <color name="gradient_start">#FFD54F</color>
+    <color name="gradient_end">#2196F3</color>
+
+    <color name="brand_gmail">#EA4335</color>
+    <color name="brand_facebook">#1877F2</color>
+    <color name="brand_instagram">#E4405F</color>
+    <color name="brand_github">#24292E</color>
+</resources>
