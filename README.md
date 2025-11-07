@@ -24,3 +24,7 @@
 3.  Build và chạy ứng dụng trên máy ảo hoặc thiết bị thật.
 
 ---
+<<<<<<< HEAD
+=======
+<img width="390" height="811" alt="image" src="https://github.com/user-attachments/assets/70e89fed-4e0e-4733-be09-0f69ec41e417" />
+>>>>>>> 31a7546a2f7bb3dae6bf92d08d8f3f120fd7ab17
